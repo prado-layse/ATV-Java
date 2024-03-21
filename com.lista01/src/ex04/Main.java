@@ -1,4 +1,4 @@
-package ex03;
+package ex04;
 
 public class Main {
 
@@ -6,15 +6,15 @@ public class Main {
 
 
         // Criando dois números complexos
-        Complexo complexo1 = new Complexo(3, 2);
-        Complexo complexo2 = new Complexo(1, 4);
+        Cliente complexo1 = new Cliente(3, 2);
+        Cliente complexo2 = new Cliente(1, 4);
 
         // Somando os números complexos
-        Complexo resultadoSoma = complexo1.soma(complexo2);
+        Cliente resultadoSoma = complexo1.soma(complexo2);
         System.out.println("Soma: " + resultadoSoma);
 
         // Multiplicando os números complexos
-        Complexo resultadoMultiplicacao = complexo1.multiplica(complexo2);
+        Cliente resultadoMultiplicacao = complexo1.multiplica(complexo2);
         System.out.println("Multiplicação: " + resultadoMultiplicacao);
 
         // Calculando o módulo e o argumento principal
