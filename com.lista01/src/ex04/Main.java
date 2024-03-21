@@ -6,23 +6,15 @@ public class Main {
 
 
         // Criando dois números complexos
-        Cliente complexo1 = new Cliente(3, 2);
-        Cliente complexo2 = new Cliente(1, 4);
+        Cliente user = new Cliente("André", 4.59 , 15.70);
 
-        // Somando os números complexos
-        Cliente resultadoSoma = complexo1.soma(complexo2);
-        System.out.println("Soma: " + resultadoSoma);
+        user.sacar(9.56);
+        user.depositar(52.96);
+        System.out.println("Saldo do Usário: " + user.checarSaldo());
+        System.out.println("Nome do Usuário " + user.obterNome());
 
-        // Multiplicando os números complexos
-        Cliente resultadoMultiplicacao = complexo1.multiplica(complexo2);
-        System.out.println("Multiplicação: " + resultadoMultiplicacao);
 
-        // Calculando o módulo e o argumento principal
-        double modulo = complexo1.modulo();
-        double argumentoPrincipal = complexo1.argumentoPrincipal();
 
-        System.out.printf("Módulo: %.2f%n", modulo);
-        System.out.printf("Argumento Principal: %.2f%n", argumentoPrincipal);
 
     }
 }
