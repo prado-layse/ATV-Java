@@ -17,6 +17,12 @@ public class Main {
         Complexo resultadoMultiplicacao = complexo1.multiplica(complexo2);
         System.out.println("Multiplicação: " + resultadoMultiplicacao);
 
+        // Calculando o módulo e o argumento principal
+        double modulo = complexo1.modulo();
+        double argumentoPrincipal = complexo1.argumentoPrincipal();
+
+        System.out.printf("Módulo: %.2f%n", modulo);
+        System.out.printf("Argumento Principal: %.2f%n", argumentoPrincipal);
 
     }
 }
