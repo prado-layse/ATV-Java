@@ -16,9 +16,9 @@ public class Pessoa {
 	public int getIdade() {
 		return idade;
 	}
-	
+
 	public boolean isVegetariana() {
-		return vegetariana == true;
+		return vegetariana;
 	}
 	
 	public void mostrar(Pessoa p){
