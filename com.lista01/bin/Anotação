@@ -1,0 +1,23 @@
+
+Exercıcio 4. Implemente a classe Cliente que possua os atributos
+nome,saldo, e limite.
+
+Esta deve possuir tambem os metodos
+sacar(),
+depositar(),
+checarSaldo(),
+e obterNome().
+Sabe-se que so e possıvel sacar se o saldo+limite
+forem superiores a quantia.
+
+Os metodos
+sacar() e
+depositar()
+necessitam de
+parametros.
+
+O metodo
+checarSaldo deve retornar o valor saldo+limite.
+
+O
+metodo obterNome() deve retornar o nome do Cliente.
