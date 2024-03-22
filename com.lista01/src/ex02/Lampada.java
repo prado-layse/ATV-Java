@@ -10,15 +10,19 @@ public class Lampada {
 	}
 
 	public void qtdAcendimentos() {
+
 		qtd++;	
-		System.out.println("Quantidade: " + qtd);
+		System.out.println("Quantidade de vezes acendida: " + qtd);
 	}
 	
 	public void click() {
 		if(estado == Estado.apagada) {
 			estado = Estado.acesa;
 			qtdAcendimentos();
-		}else estado = Estado.apagada;
+		}else{
+			estado = Estado.apagada;
+			System.out.println("Quantidade de vezes acendida: " + qtd);
+		}
 	}
 	
 	public void checaEstado() {

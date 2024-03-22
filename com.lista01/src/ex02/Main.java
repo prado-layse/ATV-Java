@@ -6,8 +6,11 @@ public class Main {
 		Lampada l = new Lampada();
 		l.checaEstado();
 		l.click();
-		l.checaEstado();
+
+        l.checaEstado();
         l.click();
+
+        l.checaEstado();
         l.click();
     }
 
