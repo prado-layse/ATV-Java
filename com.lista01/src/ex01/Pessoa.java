@@ -6,10 +6,11 @@ public class Pessoa {
 	private int idade;
 	private boolean vegetariana;
 	
-	public Pessoa(String nome, String sexo, int idade) {
+	public Pessoa(String nome, String sexo, int idade, boolean vegetariana) {
 		this.nome = nome;
 		this.sexo = sexo;
 		this.idade = idade;
+		this.vegetariana = vegetariana;
 	}
 	
 	public int getIdade() {
@@ -20,10 +21,12 @@ public class Pessoa {
 		return vegetariana == true;
 	}
 	
-	public void mostrar(){
-		System.out.println("Nome: " + nome);
-		System.out.println("Sexo: " + sexo);
-		System.out.println("Idade: " + idade);
+	public void mostrar(Pessoa p){
+		System.out.println("Nome: " + p.nome);
+		System.out.println("Sexo: " + p.sexo);
+		System.out.println("Idade: " + p.idade);
+		System.out.println("Vegetariana: " + (p.vegetariana ? "Sim" : "Não"));
+
 	}
 
 }
