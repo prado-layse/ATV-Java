@@ -11,7 +11,7 @@ public class Main {
         user.sacar(9.56);
         user.depositar(52.96);
         System.out.println("Saldo do Usário: " + user.checarSaldo());
-        System.out.println("Nome do Usuário " + user.obterNome());
+        System.out.println("Nome do Usuário: " + user.obterNome());
 
 
 
