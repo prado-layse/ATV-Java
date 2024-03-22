@@ -4,11 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 		
-		Churrasco c;
+		Churrasco c = new Churrasco();
 		Pessoa p = new Pessoa("Layse", "Feminino", 25);
 		
 		p.mostrar();
-		System.out.println("Consumo: " + c.verificarConsumo());
+		System.out.println("Consumo: " + c.verificarConsumo(p) + "KG");
+
 
 	}
 }
