@@ -5,16 +5,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        // Criando dois números complexos
-        Cliente user = new Cliente("André", 4.59 , 15.70);
+        // Cadastro cliente 
+        Cliente user = new Cliente("André", 1000 , 500);
 
-        user.sacar(9.56);
-        user.depositar(52.96);
-        System.out.println("Saldo do Usário: " + user.checarSaldo());
         System.out.println("Nome do Usuário " + user.obterNome());
-
-
-
-
+        System.out.println("Saldo do Usário: " + user.checarSaldo());
+        user.depositar(50);
+        user.sacar(1500);
+        System.out.println("Saldo do Usário: " + user.checarSaldo());
     }
 }
